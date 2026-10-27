@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sleep Well, Live Better — Camila's 3-Minute Song-Presentation</title>
+<title>Sleep Well, Live Better — Camila's Presentation</title>
 <style>
   body{font-family:Georgia,serif;max-width:760px;margin:0 auto;padding:20px;background:#FFFDF5;color:#222;line-height:1.5}
   h1{font-size:28px;margin-bottom:2px}
+  h2{font-size:22px;margin:28px 0 4px;border-bottom:2px solid #026A79;padding-bottom:4px}
   .sub{color:#555;margin-top:0}
   .badge{display:inline-block;background:#026A79;color:#fff;padding:4px 12px;border-radius:20px;font-size:14px}
   .timerbox{background:#123C46;color:#fff;border-radius:12px;padding:14px 18px;margin:18px 0}
@@ -15,14 +16,11 @@
   .bar i{display:block;height:100%;background:#FFD94D;width:0%}
   .controls button,.part button{background:#026A79;color:#fff;border:none;padding:10px 16px;border-radius:8px;font-size:16px;cursor:pointer;margin:4px 6px 4px 0}
   .controls button.stop,.part button.stop{background:#8a8a8a}
-  .howto{background:#EAF7F6;border-left:5px solid #026A79;padding:12px 16px;border-radius:0 10px 10px 0;margin:18px 0}
   .part{border:1px solid #ddd;border-radius:12px;padding:16px 18px;margin:16px 0;background:#fff}
   .part.chorus{background:#FFF8DC;border-color:#D9A441}
   .part.active{box-shadow:0 0 0 3px #026A79}
   .part h3{margin:0 0 8px;font-size:18px}
-  .part h3 span{font-weight:normal;color:#555;font-size:14px}
   .en p{font-size:22px;margin:6px 0}
-  .es{color:#4a6b5d;font-size:16px;font-style:italic;margin:10px 0 4px}
   .word{padding:1px 2px;border-radius:4px}
   .word.on{background:#FFE27A;box-shadow:0 0 0 2px #D9A441}
   .note{color:#555;font-size:14px}
@@ -30,132 +28,66 @@
 </head>
 <body>
 <h1>🎵 Sleep Well, Live Better</h1>
-<p class="sub">Camila's presentation — learned like a song. English first, Spanish below so she always knows what she is saying.</p>
-<p><span class="badge">⏱ Goal: 3 minutes live, with pauses</span></p>
+<p class="sub">Camila's presentation — only what she says: objectives, presentation, conclusion.</p>
+<p><span class="badge">⏱ About 3 minutes live, with pauses</span></p>
 
 <div class="timerbox">
   <div class="time"><span id="elapsed">0:00</span> <span style="font-size:16px">/ audio model</span></div>
   <div class="bar"><i id="progress"></i></div>
-  <p class="note" style="color:#cfe8ea">The audio model speaks at natural pace. Live, with pauses between parts, the same words last about 3 minutes.</p>
+  <p class="note" style="color:#cfe8ea">The audio model speaks at natural pace. Live, with pauses between parts, the presentation lasts about 3 minutes.</p>
 </div>
 
 <div class="controls">
-  <button onclick="playAll()">▶ Sing the whole song</button>
+  <button onclick="playAll()">▶ Play everything in order</button>
   <button class="stop" onclick="stopAll()">⏸ Stop</button>
-</div>
-
-<div class="howto">
-  <strong>How to learn it like a song:</strong>
-  <ol>
-    <li><strong>Listen</strong> to one part (▶ Escuchar).</li>
-    <li><strong>Repeat it</strong> out loud, following the lit-up words.</li>
-    <li><strong>Sing it again</strong> without looking, then check.</li>
-    <li>When every part feels easy, <strong>sing the whole song</strong> from start to finish.</li>
-  </ol>
-  <p class="note">The chorus repeats 3 times, like in a song — that repetition is what makes it stick.</p>
 </div>
 
 <div id="parts"></div>
 
-<div class="part" id="about">
-<h3>📋 Complete presentation · Presentación completa</h3>
-<p class="note">Everything from the poster, in English and Spanish. The song above is what Camila says in 3 minutes; this is the complete presentation she shows and answers from.</p>
-<p><strong>Title · Título</strong></p>
-<p><strong>I FELL ASLEEP! I DIDN'T UNDERSTAND... I FAILED!</strong><br>Two visions in the school environment that promote good health, caring for sleep quality.</p>
-<p class="es">¡ME DORMÍ! ¡NO ENTENDÍ... ¡REPROBÉ! Dos visiones en el ámbito escolar que son acicate para una buena salud, cuidando la calidad del sueño.</p>
-<p><strong>Why is it important? · ¿Por qué es importante?</strong></p>
-<p>Sleep is not only rest; it is also health, learning and well-being. Having good sleep quality helps improve concentration, memory, mood, and academic and work performance.</p>
-<p class="es">El sueño no solo es descanso, también es salud, aprendizaje y bienestar. Tener una buena calidad del sueño ayuda a mejorar la concentración, la memoria, el estado de ánimo y el rendimiento académico y laboral.</p>
-<p><strong>What is sleep quality? · ¿Qué es la calidad del sueño?</strong></p>
-<p>It is the time and the way sleep takes shape, which allows the body and the mind to recover. In adolescence, between 8 and 10 hours of daily sleep are needed.</p>
-<p class="es">Es el tiempo y la forma en la que el sueño se forma, lo que permite que el cuerpo y la mente se recuperen. En la adolescencia, se necesita entre 8 y 10 horas de sueño diarias.</p>
-<p><strong>Factors that affect it · Factores que lo afectan</strong></p>
-<ul>
-<li>The vamping phenomenon and technology addiction.</li>
-<li>Blue light (cell phones, computers, etc.).</li>
-<li>Academic load and extracurricular classes.</li>
-<li>Stimulant consumption habits (caffeine, energy drinks).</li>
-</ul>
-<p class="es">El fenómeno vamping y adicción a la tecnología. La luz azul (celulares, computadores, etc.). Carga académica y clases extracurriculares. Hábitos de consumo estimulantes (cafeína, energizantes).</p>
-<p><strong>Consequences of sleep deficit · Consecuencias del déficit de sueño</strong></p>
-<ul>
-<li>Daytime sleepiness.</li>
-<li>Low academic and work performance.</li>
-<li>Mood changes (irritability, anxiety, stress).</li>
-<li>Physical and metabolic effects (low defenses, weight gain, etc.).</li>
-</ul>
-<p class="es">Somnolencia diurna. Bajo rendimiento académico y laboral. Cambios en el estado de ánimo (irritabilidad, ansiedad, estrés). Afectaciones físicas y metabólicas (baja defensas, aumento de peso, etc.).</p>
-<p><strong>The teacher's role · El rol del docente</strong></p>
-<ul>
-<li>Teachers are also affected by lack of sleep.</li>
-<li>The fulfillment of pedagogical goals is affected.</li>
-<li>The perception of sleepiness in class.</li>
-<li>The need for flexible pedagogical strategies and workload management.</li>
-</ul>
-<p class="es">Los docentes también se ven afectados por la falta de sueño. El cumplimiento de metas pedagógicas influye. La percepción de la somnolencia en clase. La necesidad de estrategias pedagógicas flexibles y manejo de cargas laborales.</p>
-<p><strong>General objective · Objetivo general</strong></p>
-<p>To raise awareness about acquiring good habits and routines for sleep quality among 11th-grade students and high school teachers at Colegio de la Presentación de Zipaquirá, so they can maintain a healthy quality of life for good academic and work performance.</p>
-<p class="es">Crear conciencia en la adquisición de buenos hábitos y rutinas en cuanto a la calidad del sueño en estudiantes de grado 11 y docentes de bachillerato del Colegio de la Presentación de Zipaquirá, con el fin de que puedan mantener una calidad de vida saludable para un buen desempeño académico y laboral.</p>
-<p><strong>Specific objectives · Objetivos específicos</strong></p>
-<ul>
-<li>To raise awareness in order to avoid the negative consequences of lack of sleep.</li>
-<li>To establish habits that support good performance in teenagers and adults.</li>
-<li>To identify the causes that affect sleep quality and guide with strategies and tools to improve it.</li>
-</ul>
-<p class="es">Generar conciencia para evitar las consecuencias negativas de la falta de sueño. Establecer hábitos que favorezcan el buen desempeño del adolescente y el adulto. Identificar las causas que afectan la calidad del sueño y orientar con estrategias y herramientas para mejorarla.</p>
-<p><strong>Background and legal framework · Antecedentes y marco legal</strong></p>
-<p>Background: International (15) / National (16). Legal framework: 17. Bibliography: 18. (See the poster for the sources.)</p>
-<p class="es">Antecedentes: Internacionales (15) / Nacionales (16). Marco legal: 17. Bibliografía: 18. (Ver las fuentes en el afiche.)</p>
-<p><strong>Closing · Cierre</strong></p>
-<p>Sleeping well... is also studying, working and living better.</p>
-<p class="es">Dormir bien... también es estudiar, trabajar y vivir mejor.</p>
-</div>
-
-<p class="note">Tip for Thursday: if you forget a word on stage, keep going to the next lit-up line — the song continues, just like in music. 🎵</p>
-
 <script>
 const PARTS=[
-{id:"intro",label:"Intro",song:"Intro",audio:"audio/intro.mp3",
- en:["Good morning, everyone.","Today I want to talk about sleep.","Our project is: “I fell asleep! I didn't understand... I failed!”","Yes — sleep."],
- es:"Buenos días a todos. Hoy quiero hablarles del sueño. Nuestro proyecto es: “¡Me dormí! ¡No entendí... ¡Reprobé!” Sí: el sueño."},
-{id:"v1",label:"Verse 1 — Why sleep matters",song:"Verso 1",audio:"audio/v1.mp3",
- en:["Sleep is not only rest.","Sleep is health.","Sleep is learning.","Sleep is well-being.","When we sleep well, we concentrate better.","We remember better. We feel better."],
- es:"El sueño no es solo descanso. El sueño es salud. El sueño es aprendizaje. El sueño es bienestar. Cuando dormimos bien, nos concentramos mejor. Recordamos mejor. Nos sentimos mejor."},
-{id:"c1",label:"Chorus",song:"Coro",chorus:true,audio:"audio/chorus.mp3",
- en:["Sleep well...","study better, work better, live better."],
- es:"Dormir bien... estudiar mejor, trabajar mejor, vivir mejor."},
-{id:"v2",label:"Verse 2 — What sleep is",song:"Verso 2",audio:"audio/v2.mp3",
- en:["Sleep is the time when our body and mind recover.","For teenagers, we need eight to ten hours of sleep every day."],
- es:"El sueño es el momento en que nuestro cuerpo y nuestra mente se recuperan. Para los adolescentes, necesitamos de ocho a diez horas de sueño cada día."},
-{id:"v3",label:"Verse 3 — What affects it",song:"Verso 3",audio:"audio/v3.mp3",
- en:["But many things affect our sleep.","Our phones and computers, with their blue light.","Too much homework and too many classes.","And caffeine and energy drinks."],
- es:"Pero muchas cosas afectan nuestro sueño. Nuestros celulares y computadores, con su luz azul. Demasiadas tareas y demasiadas clases. Y la cafeína y las bebidas energizantes."},
-{id:"c2",label:"Chorus (again)",song:"Coro (otra vez)",chorus:true,audio:"audio/chorus.mp3",
- en:["Sleep well...","study better, work better, live better."],
- es:"Dormir bien... estudiar mejor, trabajar mejor, vivir mejor."},
-{id:"v4",label:"Verse 4 — Consequences",song:"Verso 4",audio:"audio/v4.mp3",
- en:["When we do not sleep well, we feel sleepy all day.","Our grades go down.","Our mood changes: we feel irritated, anxious, stressed.","And our body suffers too."],
- es:"Cuando no dormimos bien, nos sentimos con sueño todo el día. Nuestras notas bajan. Nuestro ánimo cambia: nos sentimos irritables, ansiosos, estresados. Y nuestro cuerpo también sufre."},
-{id:"v5",label:"Verse 5 — Two visions",song:"Verso 5",audio:"audio/v5.mp3",
- en:["This is not only about students.","Teachers need good sleep too.","When teachers sleep well, they teach better.","When students sleep well, they learn better."],
- es:"Esto no es solo de los estudiantes. Los profesores también necesitan dormir bien. Cuando los profesores duermen bien, enseñan mejor. Cuando los estudiantes duermen bien, aprenden mejor."},
-{id:"v6",label:"Verse 6 — What can we do",song:"Verso 6",audio:"audio/v6.mp3",
- en:["What can we do?","Leave the phone outside the bedroom.","Sleep eight hours every night.","No caffeine at night.","Small habits, big change."],
- es:"¿Qué podemos hacer? Dejar el celular fuera del cuarto. Dormir ocho horas cada noche. Nada de cafeína en la noche. Hábitos pequeños, gran cambio."},
-{id:"final",label:"Final chorus",song:"Coro final",chorus:true,audio:"audio/final.mp3",
- en:["So, remember:","Sleep well...","study better, work better, live better.","Thank you."],
- es:"Entonces, recuerden: Dormir bien... estudiar mejor, trabajar mejor, vivir mejor. Gracias."}
+{id:"obj-goal",section:"Objectives",label:"Objective — Goal",audio:"audio/obj-goal.mp3",
+ en:["Our goal: Help students and teachers sleep well,","so they can live healthy and do well at school and work."]},
+{id:"obj1",section:"Objectives",label:"Objective 1",audio:"audio/obj1.mp3",
+ en:["One: Know why little sleep hurts you."]},
+{id:"obj2",section:"Objectives",label:"Objective 2",audio:"audio/obj2.mp3",
+ en:["Two: Make good sleep habits."]},
+{id:"obj3",section:"Objectives",label:"Objective 3",audio:"audio/obj3.mp3",
+ en:["Three: Find what hurts your sleep,","and learn how to sleep better."]},
+{id:"intro",section:"The presentation",label:"Intro",audio:"audio/intro.mp3",
+ en:["Good morning, everyone.","Today I want to talk about sleep.","Our project is: “I fell asleep! I didn't understand... I failed!”","Yes — sleep."]},
+{id:"v1",section:"The presentation",label:"Verse 1 — Why sleep matters",audio:"audio/v1.mp3",
+ en:["Sleep is not only rest.","Sleep is health.","Sleep is learning.","Sleep is well-being.","When we sleep well, we concentrate better.","We remember better. We feel better."]},
+{id:"c1",section:"The presentation",label:"Chorus",chorus:true,audio:"audio/chorus.mp3",
+ en:["Sleep well...","study better, work better, live better."]},
+{id:"v2",section:"The presentation",label:"Verse 2 — What sleep is",audio:"audio/v2.mp3",
+ en:["Sleep is the time when our body and mind recover.","For teenagers, we need eight to ten hours of sleep every day."]},
+{id:"v3",section:"The presentation",label:"Verse 3 — What affects it",audio:"audio/v3.mp3",
+ en:["But many things affect our sleep.","Our phones and computers, with their blue light.","Too much homework and too many classes.","And caffeine and energy drinks."]},
+{id:"c2",section:"The presentation",label:"Chorus (again)",chorus:true,audio:"audio/chorus.mp3",
+ en:["Sleep well...","study better, work better, live better."]},
+{id:"v4",section:"The presentation",label:"Verse 4 — Consequences",audio:"audio/v4.mp3",
+ en:["When we do not sleep well, we feel sleepy all day.","Our grades go down.","Our mood changes: we feel irritated, anxious, stressed.","And our body suffers too."]},
+{id:"v5",section:"The presentation",label:"Verse 5 — Two visions",audio:"audio/v5.mp3",
+ en:["This is not only about students.","Teachers need good sleep too.","When teachers sleep well, they teach better.","When students sleep well, they learn better."]},
+{id:"v6",section:"The presentation",label:"Verse 6 — What can we do",audio:"audio/v6.mp3",
+ en:["What can we do?","Leave the phone outside the bedroom.","Sleep eight hours every night.","No caffeine at night.","Small habits, big change."]},
+{id:"final",section:"Conclusion",label:"Conclusion",chorus:true,audio:"audio/final.mp3",
+ en:["So, remember:","Sleep well...","study better, work better, live better.","Thank you."]}
 ];
 
 const wordsHtml=t=>t.split(/\s+/).map(w=>`<span class="word">${w}</span>`).join(" ");
-document.getElementById('parts').innerHTML=PARTS.map((p,i)=>`
-<div class="part${p.chorus?' chorus':''}" id="part-${p.id}">
-<h3>${p.chorus?'🎵 ':''}${p.label} <span>· ${p.song}</span></h3>
+let html="",curSection="";
+PARTS.forEach((p,i)=>{
+  if(p.section!==curSection){curSection=p.section;html+=`<h2>${curSection}</h2>`;}
+  html+=`<div class="part${p.chorus?' chorus':''}" id="part-${p.id}">
+<h3>${p.chorus?'🎵 ':''}${p.label}</h3>
 <div class="en">${p.en.map(l=>`<p>${wordsHtml(l)}</p>`).join("")}</div>
-<p class="es">${p.es}</p>
-<button onclick="playPart(${i})">▶ Escuchar</button>
+<button onclick="playPart(${i})">▶ Listen</button>
 <button class="stop" onclick="stopAll()">⏸ Stop</button>
-</div>`).join("");
+</div>`;
+});
+document.getElementById('parts').innerHTML=html;
 
 let currentAudio=null, currentWords=[], currentWeights=[], playAllMode=false, playIndex=0, elapsedBase=0;
 
